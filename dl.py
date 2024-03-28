@@ -53,4 +53,5 @@ try:
       print("SLEEPING FOR 5 SECONDS....")
       time.sleep(5)
 except Exception as e:
+  pass
   print(f"An error occurred: {e}")
