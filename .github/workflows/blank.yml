@@ -17,7 +17,7 @@ jobs:
 
       - name: download the required modules
         run: |
-          pip install youtube-dl
+          pip install --upgrade youtube-dl
           pip install pyrogram
           pip install tgcrypto
 
