@@ -2,6 +2,7 @@ from youtube_dl import YoutubeDL
 from pyrogram import Client
 import time
 
+ITEM_COUNT = 64
 
 bot = Client(
   "uploader",
