@@ -37,10 +37,13 @@ try:
     # Loop through each video entry in the playlist
     for video in playlist_info["entries"]:
       # Download the audio for each video
-      ydl.download([video["url"]])
+      try:
+        ydl.download([video["url"]])
       # Extract filename from the downloaded video information
-      filename = ydl.prepare_filename(video)  # Uses YoutubeDL method
-      downloaded_filenames.append(filename)
+        filename = ydl.prepare_filename(video)  # Uses YoutubeDL method
+        downloaded_filenames.append(filename)
+      except Exception as e:
+        continue 
 
   print("Download complete!")
   print(f"Downloaded filenames: {downloaded_filenames}")
