@@ -1,0 +1,28 @@
+name: Download Audio from YouTube Channel
+
+on:
+  push:  
+
+jobs:
+  download:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - uses: actions/checkout@v3  
+
+      - name: Install Python dependencies
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9' 
+
+      - name: download the required modules
+        run: |
+          pip install youtube-dl
+          pip install pyrogram
+          pip install tgcrypto
+
+      - name: Download audio files
+        run: |  # Multi-line command execution
+          python dl.py  # Replace with your script name
+          echo "Downloaded filenames are available in the output logs."
+
