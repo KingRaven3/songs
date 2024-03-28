@@ -13,7 +13,7 @@ bot = Client(
 
 
 # Channel URL (replace with the actual URL)
-CHANNEL_URL = "https://www.youtube.com/channel/UCTYv7hi2tyLmr5BfR3qebGQ"
+playlist_url = "https://www.youtube.com/playlist?list=PL_XQX1_zerr3PqqXRWuC7LFeLze6Z1CXI"
 
 # Download options
 ydl_opts = {
@@ -32,7 +32,7 @@ downloaded_filenames = []  # Add an empty list to store filenames
 try:
   with YoutubeDL(ydl_opts) as ydl:
     # Extract video information from the channel URL (playlist)
-    playlist_info = ydl.extract_info(CHANNEL_URL, download=False)
+    playlist_info = ydl.extract_info(playlist_url, download=False)
 
     # Loop through each video entry in the playlist
     for video in playlist_info["entries"]:
