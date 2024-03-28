@@ -35,7 +35,7 @@ try:
     try:
       playlist_info = ydl.extract_info(playlist_url, download=False)
     except Exception as e:
-      pass
+      continue
 
     # Loop through each video entry in the playlist
     for video in playlist_info["entries"]:
