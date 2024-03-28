@@ -25,6 +25,7 @@ ydl_opts = {
     'verbose': True,  # Optional, shows download progress
     'playlistend': ITEM_COUNT,  # Optional, download limit (replace with number)
     'download_archive': 'downloaded.txt',  # Optional, download archive filename
+    'ignore_errors': True,
 }
 
 downloaded_filenames = []  # Add an empty list to store filenames
