@@ -33,10 +33,8 @@ downloaded_filenames = []  # Add an empty list to store filenames
 try:
   with YoutubeDL(ydl_opts) as ydl:
     # Extract video information from the channel URL (playlist)
-    try:
-      playlist_info = ydl.extract_info(playlist_url, download=False)
-    except Exception as e:
-      continue
+    playlist_info = ydl.extract_info(playlist_url, download=False)
+
 
     # Loop through each video entry in the playlist
     for video in playlist_info["entries"]:
