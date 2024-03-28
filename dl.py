@@ -47,7 +47,7 @@ try:
   print("uploading to telegram...")
 
   with bot:
-    for x in downloaded_files:
+    for x in downloaded_filenames:
       print(f"UPLOADING {x}")
       bot.send_audio(-1002094180732 , x)
       print("SLEEPING FOR 5 SECONDS....")
