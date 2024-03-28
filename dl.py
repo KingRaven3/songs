@@ -6,7 +6,7 @@ import time
 bot = Client(
   "uploader",
   api_id=6,
-  api_hash="",
+  api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e",
   bot_token="5667720219:AAFK0EOKlXTyW9vnXwwIBRL3x1OBzf_kd8g"
 )
 
