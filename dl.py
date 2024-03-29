@@ -8,7 +8,7 @@ bot = Client(
   "uploader",
   api_id=6,
   api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e",
-  bot_token="5667720219:AAFK0EOKlXTyW9vnXwwIBRL3x1OBzf_kd8g"
+  bot_token="5667720219:AAG_Ny-LlA5v5qEehPHaou8y0Z0eVLGm8ug"
 )
 
 
