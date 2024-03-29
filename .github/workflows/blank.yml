@@ -22,6 +22,7 @@ jobs:
           pip install tgcrypto
 
       - name: Download audio files
+        continue-on-error: true
         run: |  # Multi-line command execution
           python dl.py  # Replace with your script name
           echo "Downloaded filenames are available in the output logs."
